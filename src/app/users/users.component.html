@@ -1,0 +1,22 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let user of usersArr" 
+            [ngClass]="{'active' : user.userId === 1}" [routerLink]="['/users', user.userId]">
+                {{user.userName}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <app-user></app-user>
+        <button class="btn btn-danger mt-3" (click)="goToAirlinePassengers()">Go to Airline Dashboard</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+

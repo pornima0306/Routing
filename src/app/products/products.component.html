@@ -1,0 +1,15 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let prod of productArr" 
+            [class.active]="prod.pId === 3">
+                {{prod.pName}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <app-edit-component></app-edit-component>
+        <hr>
+        <app-product></app-product>
+    </div>
+</div>
